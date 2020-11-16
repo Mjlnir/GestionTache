@@ -21,14 +21,43 @@
         android:id="@+id/etNomTache"
         android:hint="Nom de la tâche"/>
 
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/etNomTache"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDateTache"
+        android:text="Date Tâche : "/>
+
     <DatePicker
-        app:layout_constraintTop_toBottomOf="@id/tvNomTache"
+        app:layout_constraintTop_toBottomOf="@id/tvDateTache"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="10dp"
         android:id="@+id/dpDate"/>
+
+    <Button
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="100dp"
+        android:id="@+id/btnCM"
+        android:text="Créer/Modifier"
+        android:onClick="CMTache"/>
+
+    <Button
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/btnCM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/btnAnnuler"
+        android:text="Annuler"
+        android:onClick="AnnulerTache"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
