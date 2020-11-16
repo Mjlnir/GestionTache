@@ -33,6 +33,7 @@
         android:layout_marginLeft="10dp"
         android:layout_below="@id/lvTaches"
         android:id="@+id/btnSupprimer"
-        android:text="Supprimer"/>
+        android:text="Supprimer"
+        android:onClick="DeleteTache"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

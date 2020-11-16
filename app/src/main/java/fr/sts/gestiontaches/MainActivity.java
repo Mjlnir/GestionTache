@@ -82,4 +82,8 @@ public class MainActivity extends AppCompatActivity {
             lvAdaptateur.notifyDataSetChanged();
         }
     }
+
+    public void DeleteTache(View view) {
+        lvAdaptateur.clear();
+    }
 }
